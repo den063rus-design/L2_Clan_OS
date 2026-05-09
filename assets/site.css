@@ -629,6 +629,18 @@ figcaption span,
   font-weight: 900;
 }
 
+.contact-link {
+  color: var(--gold);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  color: var(--mint);
+}
+
 .roles {
   background: #101314;
 }
