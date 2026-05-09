@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Полный мануал по L2 Clan OS: как бот подключается, кто за что отвечает, как устроен доступ, рейды, DKP, лут и права.">
+    <title>Мануал - L2 Clan OS</title>
+    <link rel="stylesheet" href="./assets/site.css">
+    <script src="./assets/site.js" defer></script>
+  </head>
+  <body class="manual-page">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="L2 Clan OS">
+        <span class="brand-mark">L2</span>
+        <span>L2 Clan OS</span>
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="./index.html#features">Возможности</a>
+        <a href="./index.html#screens">Скриншоты</a>
+        <a href="./index.html#connect">Подключение</a>
+        <a href="./manual.html" aria-current="page">Мануал</a>
+        <a href="./index.html#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="manual-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Полная инструкция</p>
+          <h1 id="manual-title">Как работает L2 Clan OS</h1>
+          <p class="hero-copy">
+            Эта страница объясняет не только кнопки, а весь бот целиком: как сервер подключается, кто дает доступ, какие есть роли, зачем нужен отдельный админ-канал и как клан живет внутри Discord.
+          </p>
+          <div class="hero-actions" aria-label="Переходы">
+            <a class="button primary" href="./index.html">На главную</a>
+            <a class="button secondary" href="./index.html#connect">Как подключить сервер</a>
+          </div>
+          <dl class="hero-stats" aria-label="Ключевые опоры бота">
+            <div>
+              <dt>Команды</dt>
+              <dd>только <code>/setup</code> и <code>/panel</code></dd>
+            </div>
+            <div>
+              <dt>Панель</dt>
+              <dd>все действия кнопками и формами</dd>
+            </div>
+            <div>
+              <dt>Доступ</dt>
+              <dd>через одобрение владельца бота</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section intro" aria-labelledby="what-title">
+        <div class="section-inner intro-grid">
+          <div>
+            <p class="eyebrow">Что это</p>
+            <h2 id="what-title">Bot для Lineage 2 кланов, который держит порядок в Discord</h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              L2 Clan OS создан для кланов, где рейды, праймы, DKP, лут и права уже давно живут в Discord. Вместо хаоса из сообщений бот собирает управление в панели: человек регистрируется, рейд открывается кнопкой, DKP фиксируется в базе, а доступ к функциям выдается только после одобрения.
+            </p>
+            <p>
+              У бота есть четкая логика: один Discord-сервер считается одним кланом, данные серверов не смешиваются, а главный доступ контролирует владелец бота. Поэтому его удобно ставить и в маленький клан, и в сервис на несколько серверов сразу.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-band" aria-labelledby="bot-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Как работает</p>
+            <h2 id="bot-title">Сначала сервер получает доступ, потом клан работает через панель</h2>
+            <p>Это важный момент: invite-ссылка сама по себе ничего не открывает. Пока сервер не одобрен владельцем бота, клановые функции не работают.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-index">01</span>
+              <h3>Один сервер - один клан</h3>
+              <p>Каждый Discord-сервер живет отдельно. У него свой список участников, свои рейды, свой DKP и свой лут.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">02</span>
+              <h3>Доступ не дается автоматически</h3>
+              <p>Сервер сначала попадает в очередь ожидания. Владелец бота решает, одобрить его или запретить.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">03</span>
+              <h3>Все работает через панель</h3>
+              <p>После `/setup` обычная работа идет через кнопки и формы, без постоянного набора длинных команд.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">04</span>
+              <h3>Данные не смешиваются</h3>
+              <p>Рейды, пользователи, права и DKP хранятся отдельно по каждому серверу. Кланы не мешают друг другу.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">05</span>
+              <h3>Подходит для нескольких кланов</h3>
+              <p>Один бот можно использовать сразу на нескольких Discord-серверах, если доступ каждому клану одобрен отдельно.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">06</span>
+              <h3>Защита от чужих серверов</h3>
+              <p>Даже если invite-ссылка утечет, левый сервер не получит доступ к бот-клановым функциям без одобрения.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roles" aria-labelledby="roles-title">
+        <div class="section-inner roles-layout">
+          <div>
+            <p class="eyebrow">Роли и права</p>
+            <h2 id="roles-title">Внутри клана бот разделяет управление на понятные роли</h2>
+            <p>Это помогает не отдавать полный контроль всем подряд. Админ управляет доступом, офицер ведет рабочие процессы, участник просто пользуется ботом.</p>
+          </div>
+          <div class="role-list" aria-label="Роли в боте">
+            <article>
+              <h3>Владелец бота</h3>
+              <p>Одобряет серверы, запрещает левые заявки и задает срок доступа. Это глобальный контроль над сервисом.</p>
+            </article>
+            <article>
+              <h3>Админ клана</h3>
+              <p>Назначает права внутри клана, следит за порядком и помогает настроить работу бота на сервере.</p>
+            </article>
+            <article>
+              <h3>Офицер</h3>
+              <p>Создает и закрывает рейды, ставит таймеры, начисляет или списывает DKP, записывает лут.</p>
+            </article>
+            <article>
+              <h3>Участник</h3>
+              <p>Регистрируется, смотрит списки и отмечается на рейдах. Ему не нужны сложные команды.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section security" aria-labelledby="security-title">
+        <div class="section-inner security-grid">
+          <div>
+            <p class="eyebrow">Доступ и безопасность</p>
+            <h2 id="security-title">Доступ выдается вручную, а не по факту добавления бота</h2>
+          </div>
+          <div class="security-copy">
+            <p>
+              После добавления бота сервер получает статус ожидания. Это нужно, чтобы на бот не могли просто так сесть случайные кланы или левые Discord-серверы.
+            </p>
+            <p>
+              Владелец бота видит заявки в своей панели, может одобрить сервер, запретить его или поставить срок доступа. Когда срок заканчивается, клановые функции отключаются до продления.
+            </p>
+            <p>
+              Такой подход позволяет держать бот как сервис: доступ контролируется, данные каждого клана изолированы, а пользователи чужих серверов не получают лишние права.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-band" aria-labelledby="panel-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Что умеет панель</p>
+            <h2 id="panel-title">Панель - это центр управления кланом</h2>
+            <p>Открываешь ее один раз и дальше работаешь кнопками. Это и есть основная идея бота.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Регистрация</h3>
+              <p>Связывает Discord-аккаунт с игровым ником, классом и КП. Без этого клану тяжелее вести учет людей.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Участники</h3>
+              <p>Показывает список зарегистрированных людей клана. Удобно проверять, кто уже внесен в систему.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Рейды</h3>
+              <p>Создание, список, фильтры по датам и закрытие рейда. Здесь же живут кнопки участия и отчет по рейду.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Таймеры</h3>
+              <p>Напоминания о РБ, эпиках и любых важных событиях. Можно задать несколько уведомлений перед временем.</p>
+            </article>
+            <article class="feature-card">
+              <h3>DKP +/-</h3>
+              <p>Ручное начисление и списание DKP, если нужно исправить награду, добавить бонус или обработать опоздавшего.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Лут</h3>
+              <p>Запись выданных предметов, стоимости и получателя. История лута остается в боте, а не в памяти офицера.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Права</h3>
+              <p>Назначение ролей `Админ`, `Офицер`, `Участник` и отзыв доступа тем, кто больше не должен управлять кланом.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Подписка</h3>
+              <p>Проверка доступа к клановым функциям. Если срок закончился, панель подскажет, что делать дальше.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section workflow" aria-labelledby="workflow-title">
+        <div class="section-inner workflow-grid">
+          <div class="section-heading">
+            <p class="eyebrow">Типичный сценарий</p>
+            <h2 id="workflow-title">Как клан работает с ботом изо дня в день</h2>
+            <p>Здесь видно, что бот закрывает не одну кнопку, а весь привычный цикл клана.</p>
+          </div>
+          <div class="timeline" aria-label="Рабочий процесс клана">
+            <article>
+              <span>Старт</span>
+              <h3>Сервер добавляют и одобряют</h3>
+              <p>Клан получает invite-ссылку, владелец бота одобряет сервер, а админ запускает `/setup`.</p>
+            </article>
+            <article>
+              <span>Подготовка</span>
+              <h3>Админ открывает панель</h3>
+              <p>Через `/panel` настраивают права, регистрируют людей и подготавливают рабочий канал для управления.</p>
+            </article>
+            <article>
+              <span>Рейд</span>
+              <h3>Офицер создает событие</h3>
+              <p>Указывает название, время, DKP и напоминания. Участники отмечаются кнопками `Буду`, `Я на месте`, `Опоздаю`, `Не буду`.</p>
+            </article>
+            <article>
+              <span>Финиш</span>
+              <h3>Рейд закрывается и сохраняется</h3>
+              <p>Бот показывает отчет по участникам, а DKP начисляется только тем, кто реально был на месте.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" aria-labelledby="faq-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Короткие ответы</p>
+            <h2 id="faq-title">Что чаще всего важно понять сразу</h2>
+          </div>
+          <div class="faq-grid">
+            <details>
+              <summary>Нужно ли писать много команд?</summary>
+              <p>Нет. В обычной работе нужны только `/setup` и `/panel`. Все остальное делается внутри панели.</p>
+            </details>
+            <details>
+              <summary>Почему лучше отдельный админ-канал?</summary>
+              <p>Чтобы не терять управление ботом в обычном клановом чате. Там удобнее держать рейды, DKP, права и лут.</p>
+            </details>
+            <details>
+              <summary>Можно ли использовать одного бота нескольким кланам?</summary>
+              <p>Да. Каждый Discord-сервер хранится отдельно, а доступ к нему выдается владельцем бота отдельно.</p>
+            </details>
+            <details>
+              <summary>Что происходит при окончании доступа?</summary>
+              <p>Клановые функции перестают работать, пока владелец бота не продлит срок доступа.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="cta-inner">
+          <p class="eyebrow">Готово к использованию</p>
+          <h2 id="cta-title">Теперь бот можно объяснить клану без лишних слов</h2>
+          <p>Сначала одобрение сервера, потом `/setup`, затем `/panel` и работа через кнопки. Именно так L2 Clan OS остается понятным даже для большого клана.</p>
+          <a class="button primary" href="./index.html">Вернуться на главную</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>L2 Clan OS</span>
+      <a href="https://github.com/den063rus-design/L2_Clan_OS">GitHub</a>
+      <a href="./index.html">Главная</a>
+    </footer>
+  </body>
+</html>

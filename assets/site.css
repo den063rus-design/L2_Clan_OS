@@ -111,6 +111,10 @@ code {
   color: var(--text);
 }
 
+.site-nav a[aria-current="page"] {
+  color: var(--gold);
+}
+
 .hero {
   position: relative;
   min-height: min(760px, calc(100svh - 7rem));
@@ -119,6 +123,17 @@ code {
   overflow: hidden;
   border-bottom: 1px solid var(--line);
   padding: clamp(4rem, 9vw, 7rem) clamp(1rem, 5vw, 4rem);
+}
+
+.manual-page .hero {
+  min-height: auto;
+  padding-top: clamp(4rem, 8vw, 6rem);
+  padding-bottom: clamp(4rem, 8vw, 6rem);
+}
+
+.manual-page .hero h1 {
+  max-width: 11ch;
+  font-size: clamp(3.1rem, 6.2vw, 5.3rem);
 }
 
 .hero-media {
