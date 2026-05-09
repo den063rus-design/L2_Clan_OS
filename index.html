@@ -6,6 +6,7 @@
     <meta name="description" content="L2 Clan OS - Discord-бот для Lineage 2 кланов: рейды, DKP, лут, таймеры и права через кнопки.">
     <title>L2 Clan OS - Discord-бот для Lineage 2 кланов</title>
     <link rel="stylesheet" href="./assets/site.css">
+    <script src="./assets/site.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -171,6 +172,7 @@
           <div class="section-heading">
             <p class="eyebrow">Скриншоты</p>
             <h2 id="screens-title">Так бот выглядит в реальном Discord</h2>
+            <p>Нажмите на маленький скриншот, чтобы открыть его крупнее и рассмотреть детали интерфейса.</p>
           </div>
           <div class="screenshot-feature">
             <figure>
@@ -183,35 +185,59 @@
           </div>
           <div class="screenshot-grid" aria-label="Галерея интерфейса">
             <figure>
-              <img src="./assets/screenshots/register-modal.png" alt="Форма регистрации участника в L2 Clan OS" loading="lazy">
+              <button class="screenshot-button" type="button" data-full="./assets/screenshots/register-modal.png" data-caption="Регистрация участника" aria-label="Увеличить скриншот: Регистрация участника">
+                <img src="./assets/screenshots/register-modal.png" alt="Форма регистрации участника в L2 Clan OS" loading="lazy">
+                <span>Увеличить</span>
+              </button>
               <figcaption>Регистрация участника</figcaption>
             </figure>
             <figure>
-              <img src="./assets/screenshots/raid-create-modal.png" alt="Форма создания рейда в Discord" loading="lazy">
+              <button class="screenshot-button" type="button" data-full="./assets/screenshots/raid-create-modal.png" data-caption="Создание рейда" aria-label="Увеличить скриншот: Создание рейда">
+                <img src="./assets/screenshots/raid-create-modal.png" alt="Форма создания рейда в Discord" loading="lazy">
+                <span>Увеличить</span>
+              </button>
               <figcaption>Создание рейда</figcaption>
             </figure>
             <figure>
-              <img src="./assets/screenshots/raid-list.png" alt="Список рейдов в L2 Clan OS" loading="lazy">
+              <button class="screenshot-button" type="button" data-full="./assets/screenshots/raid-list.png" data-caption="Список рейдов" aria-label="Увеличить скриншот: Список рейдов">
+                <img src="./assets/screenshots/raid-list.png" alt="Список рейдов в L2 Clan OS" loading="lazy">
+                <span>Увеличить</span>
+              </button>
               <figcaption>Список рейдов</figcaption>
             </figure>
             <figure>
-              <img src="./assets/screenshots/timer-modal.png" alt="Форма добавления таймера РБ или эпика" loading="lazy">
+              <button class="screenshot-button" type="button" data-full="./assets/screenshots/timer-modal.png" data-caption="Таймеры РБ" aria-label="Увеличить скриншот: Таймеры РБ">
+                <img src="./assets/screenshots/timer-modal.png" alt="Форма добавления таймера РБ или эпика" loading="lazy">
+                <span>Увеличить</span>
+              </button>
               <figcaption>Таймеры РБ</figcaption>
             </figure>
             <figure>
-              <img src="./assets/screenshots/dkp-user-select.png" alt="Выбор участника для начисления DKP" loading="lazy">
+              <button class="screenshot-button" type="button" data-full="./assets/screenshots/dkp-user-select.png" data-caption="Выбор участника" aria-label="Увеличить скриншот: Выбор участника">
+                <img src="./assets/screenshots/dkp-user-select.png" alt="Выбор участника для начисления DKP" loading="lazy">
+                <span>Увеличить</span>
+              </button>
               <figcaption>Выбор участника</figcaption>
             </figure>
             <figure>
-              <img src="./assets/screenshots/dkp-modal.png" alt="Форма начисления или списания DKP" loading="lazy">
+              <button class="screenshot-button" type="button" data-full="./assets/screenshots/dkp-modal.png" data-caption="Начисление DKP" aria-label="Увеличить скриншот: Начисление DKP">
+                <img src="./assets/screenshots/dkp-modal.png" alt="Форма начисления или списания DKP" loading="lazy">
+                <span>Увеличить</span>
+              </button>
               <figcaption>Начисление DKP</figcaption>
             </figure>
             <figure>
-              <img src="./assets/screenshots/loot-modal.png" alt="Форма записи лута и стоимости DKP" loading="lazy">
+              <button class="screenshot-button" type="button" data-full="./assets/screenshots/loot-modal.png" data-caption="Запись лута" aria-label="Увеличить скриншот: Запись лута">
+                <img src="./assets/screenshots/loot-modal.png" alt="Форма записи лута и стоимости DKP" loading="lazy">
+                <span>Увеличить</span>
+              </button>
               <figcaption>Запись лута</figcaption>
             </figure>
             <figure>
-              <img src="./assets/screenshots/access-role-select.png" alt="Выбор роли участника клана" loading="lazy">
+              <button class="screenshot-button" type="button" data-full="./assets/screenshots/access-role-select.png" data-caption="Права клана" aria-label="Увеличить скриншот: Права клана">
+                <img src="./assets/screenshots/access-role-select.png" alt="Выбор роли участника клана" loading="lazy">
+                <span>Увеличить</span>
+              </button>
               <figcaption>Права клана</figcaption>
             </figure>
           </div>
@@ -237,7 +263,7 @@
               <span>2</span>
               <div>
                 <h3>Дождаться одобрения</h3>
-                <p>Глобальный владелец открывает <code>/owner-panel</code>, выбирает сервер и нажимает <code>Одобрить</code>.</p>
+                <p>Свяжитесь с владельцем бота через Discord, Telegram или почту, передайте название сервера и дождитесь подтверждения доступа.</p>
               </div>
             </li>
             <li>
@@ -338,6 +364,15 @@
         </div>
       </section>
     </main>
+
+    <div class="lightbox" id="screenshot-lightbox" hidden role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button class="lightbox-backdrop" type="button" data-lightbox-close aria-label="Закрыть увеличенный скриншот"></button>
+      <figure class="lightbox-panel">
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="Закрыть увеличенный скриншот">×</button>
+        <img id="lightbox-image" src="" alt="">
+        <figcaption id="lightbox-title"></figcaption>
+      </figure>
+    </div>
 
     <footer class="site-footer">
       <span>L2 Clan OS</span>
