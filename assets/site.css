@@ -155,9 +155,21 @@ code {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(15, 16, 20, 0.97) 0%, rgba(15, 16, 20, 0.82) 42%, rgba(15, 16, 20, 0.25) 100%),
-    url("./icon.png") center right / min(620px, 46vw) auto no-repeat,
     #101116;
   transform: scale(1.02);
+}
+
+.hero-media::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: clamp(1rem, 5vw, 5rem);
+  width: min(620px, 46vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: url("./icon.png") center / cover no-repeat;
+  box-shadow: 0 0 90px rgba(242, 184, 75, 0.22);
+  transform: translateY(-50%);
 }
 
 .hero-overlay {
@@ -883,9 +895,16 @@ figcaption span,
   .hero-media {
     background:
       linear-gradient(180deg, rgba(15, 16, 20, 0.9), rgba(15, 16, 20, 0.72)),
-      url("./icon.png") center bottom / min(620px, 74vw) auto no-repeat,
       #101116;
     opacity: 0.92;
+  }
+
+  .hero-media::before {
+    top: auto;
+    right: 50%;
+    bottom: -6rem;
+    width: min(620px, 74vw);
+    transform: translateX(50%);
   }
 
   .intro-grid,
@@ -942,8 +961,12 @@ figcaption span,
   .hero-media {
     background:
       linear-gradient(180deg, rgba(15, 16, 20, 0.98), rgba(15, 16, 20, 0.9)),
-      url("./icon.png") center bottom / min(520px, 92vw) auto no-repeat,
       #101116;
+  }
+
+  .hero-media::before {
+    bottom: -3rem;
+    width: min(520px, 92vw);
   }
 
   .hero-stats {
