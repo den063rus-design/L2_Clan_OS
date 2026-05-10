@@ -86,6 +86,15 @@ code {
   font-weight: 800;
 }
 
+.brand-logo {
+  width: 2.35rem;
+  height: 2.35rem;
+  border: 1px solid rgba(242, 184, 75, 0.65);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 24px rgba(242, 184, 75, 0.18);
+}
+
 .brand-mark {
   display: grid;
   width: 2rem;
@@ -132,7 +141,7 @@ code {
 }
 
 .manual-page .hero h1 {
-  max-width: 11ch;
+  max-width: 13ch;
   font-size: clamp(3.1rem, 6.2vw, 5.3rem);
 }
 
@@ -140,8 +149,8 @@ code {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(15, 16, 20, 0.95) 0%, rgba(15, 16, 20, 0.84) 38%, rgba(15, 16, 20, 0.35) 100%),
-    url("./screenshots/clan-panel.png") center right / min(880px, 76vw) auto no-repeat,
+    linear-gradient(90deg, rgba(15, 16, 20, 0.97) 0%, rgba(15, 16, 20, 0.82) 42%, rgba(15, 16, 20, 0.25) 100%),
+    url("./icon.png") center right / min(620px, 46vw) auto no-repeat,
     #101116;
   transform: scale(1.02);
 }
@@ -156,6 +165,16 @@ code {
 .hero-content {
   position: relative;
   width: min(720px, 100%);
+}
+
+.hero-emblem {
+  width: clamp(4.4rem, 8vw, 6.8rem);
+  height: clamp(4.4rem, 8vw, 6.8rem);
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(242, 184, 75, 0.45);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 42px rgba(242, 184, 75, 0.18);
 }
 
 .eyebrow {
@@ -176,8 +195,8 @@ p {
 
 h1 {
   margin-bottom: 1rem;
-  max-width: 9ch;
-  font-size: 7rem;
+  max-width: 11ch;
+  font-size: 6.7rem;
   line-height: 0.9;
   letter-spacing: 0;
 }
@@ -748,7 +767,7 @@ figcaption span,
   .hero-media {
     background:
       linear-gradient(180deg, rgba(15, 16, 20, 0.9), rgba(15, 16, 20, 0.72)),
-      url("./screenshots/clan-panel.png") center bottom / 980px auto no-repeat,
+      url("./icon.png") center bottom / min(620px, 74vw) auto no-repeat,
       #101116;
     opacity: 0.92;
   }
@@ -806,7 +825,7 @@ figcaption span,
   .hero-media {
     background:
       linear-gradient(180deg, rgba(15, 16, 20, 0.98), rgba(15, 16, 20, 0.9)),
-      url("./screenshots/clan-panel.png") center bottom / 820px auto no-repeat,
+      url("./icon.png") center bottom / min(520px, 92vw) auto no-repeat,
       #101116;
   }
 

@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="L2 Clan OS - Discord-бот для Lineage 2 кланов: рейды, DKP, лут, таймеры и права через кнопки.">
-    <title>L2 Clan OS - Discord-бот для Lineage 2 кланов</title>
+    <meta name="description" content="MMO Clan OS - Discord-бот для MMORPG-кланов и гильдий: рейды, DKP/очки, лут, таймеры, анонсы и права через кнопки.">
+    <title>MMO Clan OS - Discord-бот для MMORPG-кланов и гильдий</title>
+    <link rel="icon" href="./assets/icon.png" type="image/png">
     <link rel="stylesheet" href="./assets/site.css">
     <script src="./assets/site.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="L2 Clan OS">
-        <span class="brand-mark">L2</span>
-        <span>L2 Clan OS</span>
+      <a class="brand" href="#top" aria-label="MMO Clan OS">
+        <img class="brand-logo" src="./assets/icon.png" alt="" aria-hidden="true">
+        <span>MMO Clan OS</span>
       </a>
       <nav class="site-nav" aria-label="Основная навигация">
         <a href="#features">Возможности</a>
@@ -28,10 +29,11 @@
         <div class="hero-media" aria-hidden="true"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">Discord-инструмент для Lineage 2</p>
-          <h1 id="hero-title">L2 Clan OS</h1>
+          <img class="hero-emblem" src="./assets/icon.png" alt="" aria-hidden="true">
+          <p class="eyebrow">Discord-инструмент для MMORPG</p>
+          <h1 id="hero-title">MMO Clan OS</h1>
           <p class="hero-copy">
-            Клановая панель в Discord: рейды, отметки, DKP, лут, таймеры РБ и права доступа без длинных команд, ручных таблиц и потерянных сообщений.
+            Панель управления кланом или гильдией в Discord: рейды, отметки участия, DKP/очки, лут, таймеры, анонсы и права доступа без длинных команд, ручных таблиц и потерянных сообщений.
           </p>
           <div class="hero-actions" aria-label="Основные действия">
             <a class="button primary" href="#connect">Получить доступ</a>
@@ -44,12 +46,12 @@
               <dd>вместо команд</dd>
             </div>
             <div>
-              <dt>DKP</dt>
-              <dd>баланс и списания</dd>
+              <dt>Очки</dt>
+              <dd>DKP, баланс и списания</dd>
             </div>
             <div>
-              <dt>Мультиклан</dt>
-              <dd>каждый сервер отдельно</dd>
+              <dt>MMO</dt>
+              <dd>гильдии и кланы отдельно</dd>
             </div>
           </dl>
         </div>
@@ -59,14 +61,14 @@
         <div class="section-inner intro-grid">
           <div>
             <p class="eyebrow">Зачем это нужно</p>
-            <h2 id="intro-title">Операционка клана прямо внутри Discord</h2>
+            <h2 id="intro-title">Операционка MMO-гильдии прямо внутри Discord</h2>
           </div>
           <div class="intro-copy">
             <p>
-              В Lineage 2 клан живет в Discord: там собираются на рейды, спорят за лут, отмечают праймы, ищут замену в КП и держат расписание РБ. Проблема в том, что без системы все быстро превращается в поток сообщений, скриншотов и ручных таблиц.
+              В MMORPG гильдия живет в Discord: там собираются на рейды, спорят за лут, отмечают праймы, ищут замену в статик или группу и держат расписание боссов. Проблема в том, что без системы все быстро превращается в поток сообщений, скриншотов и ручных таблиц.
             </p>
             <p>
-              L2 Clan OS переносит основные процессы клана в понятные кнопки. Офицер не вспоминает команды, участник не ищет, куда писать ник, а админ видит, кто имеет права и до какой даты сервер может пользоваться ботом.
+              MMO Clan OS переносит основные процессы клана или гильдии в понятные кнопки. Офицер не вспоминает команды, участник не ищет, куда писать ник, а админ видит, кто имеет права и до какой даты сервер может пользоваться ботом.
             </p>
           </div>
         </div>
@@ -76,20 +78,47 @@
         <div class="section-inner">
           <div class="section-heading">
             <p class="eyebrow">Для кого</p>
-            <h2 id="audience-title">Для кланов, где важен порядок на прайме</h2>
+            <h2 id="audience-title">Для кланов и гильдий, где важен порядок на прайме</h2>
           </div>
           <div class="audience-grid">
             <article>
-              <h3>Для КЛа</h3>
-              <p>Видно, что происходит в клане: кто зарегистрирован, какие рейды открыты, кто ведет DKP и кто имеет права администратора.</p>
+              <h3>Для лидера</h3>
+              <p>Видно, что происходит в гильдии: кто зарегистрирован, какие рейды открыты, кто ведет DKP/очки и кто имеет права администратора.</p>
             </article>
             <article>
               <h3>Для офицеров</h3>
-              <p>Рейды, таймеры, DKP и лут оформляются через формы. Меньше рутины, меньше ошибок, меньше вопросов “куда это писать?”.</p>
+              <p>Рейды, таймеры, анонсы, DKP/очки и лут оформляются через формы. Меньше рутины, меньше ошибок, меньше вопросов “куда это писать?”.</p>
             </article>
             <article>
               <h3>Для участников</h3>
-              <p>Участник открывает панель, регистрирует ник, смотрит рейды, баланс DKP и отмечается без изучения набора команд.</p>
+              <p>Участник открывает панель, регистрирует ник, смотрит рейды, баланс очков и отмечается без изучения набора команд.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section game-band" aria-labelledby="game-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Шире одной игры</p>
+            <h2 id="game-title">Подходит для любой MMORPG, где люди ходят на события группой</h2>
+            <p>Не важно, как игра называет сообщество: клан, гильдия, статик, конста или рейдовая группа. Если есть состав, расписание, боссы, лут и ответственные офицеры, MMO Clan OS закрывает эту рутину внутри Discord.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-index">MMO</span>
+              <h3>Рейдовые гильдии</h3>
+              <p>Планируют события, собирают состав, смотрят отметки участия и фиксируют результат после рейда.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">PvP</span>
+              <h3>Кланы с осадами</h3>
+              <p>Держат анонсы, таймеры, списки участников и права офицеров в одном управляемом месте.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">Loot</span>
+              <h3>Команды с DKP/очками</h3>
+              <p>Ведут баланс, списания и историю выдачи предметов без ручного поиска по старым сообщениям.</p>
             </article>
           </div>
         </div>
@@ -99,14 +128,14 @@
         <div class="section-inner">
           <div class="section-heading">
             <p class="eyebrow">Возможности</p>
-            <h2 id="features-title">Все базовые действия клана в одном месте</h2>
-            <p>L2 Clan OS не пытается заменить Discord. Он аккуратно добавляет в него рабочий слой для клана: кнопки, формы, роли и историю действий.</p>
+            <h2 id="features-title">Все базовые действия MMO-сообщества в одном месте</h2>
+            <p>MMO Clan OS не пытается заменить Discord. Он добавляет в него рабочий слой для гильдии: кнопки, формы, роли, история действий и контроль доступа.</p>
           </div>
           <div class="feature-grid">
             <article class="feature-card">
               <span class="feature-index">01</span>
               <h3>Кнопочная панель</h3>
-              <p>Основные действия доступны из одной панели: регистрация, рейды, DKP, лут, таймеры, подписка и права.</p>
+              <p>Основные действия доступны из одной панели: регистрация, рейды, DKP/очки, лут, таймеры, анонсы, подписка и права.</p>
             </article>
             <article class="feature-card">
               <span class="feature-index">02</span>
@@ -115,18 +144,18 @@
             </article>
             <article class="feature-card">
               <span class="feature-index">03</span>
-              <h3>DKP и лут</h3>
+              <h3>Очки и лут</h3>
               <p>Начисления, списания и выдача предметов фиксируются в базе, чтобы не терять важные решения после фарма.</p>
             </article>
             <article class="feature-card">
               <span class="feature-index">04</span>
-              <h3>Права в клане</h3>
-              <p>Есть роли админа, офицера и участника. Админ клана сам назначает доступ своим людям.</p>
+              <h3>Права в гильдии</h3>
+              <p>Есть роли админа, офицера и участника. Админ сам назначает доступ своим людям.</p>
             </article>
             <article class="feature-card">
               <span class="feature-index">05</span>
-              <h3>Несколько кланов</h3>
-              <p>Один бот работает на разных Discord-серверах, а данные каждого клана хранятся отдельно.</p>
+              <h3>Несколько серверов</h3>
+              <p>Один бот работает на разных Discord-серверах, а данные каждой гильдии или клана хранятся отдельно.</p>
             </article>
             <article class="feature-card">
               <span class="feature-index">06</span>
@@ -144,7 +173,7 @@
             <h2 id="workflow-title">Как это выглядит в работе</h2>
             <p>Обычный прайм можно провести без отдельной таблицы и без постоянного ручного учета в чате.</p>
           </div>
-          <div class="timeline" aria-label="Рабочий процесс клана">
+          <div class="timeline" aria-label="Рабочий процесс гильдии">
             <article>
               <span>18:00</span>
               <h3>Офицер создает рейд</h3>
@@ -153,12 +182,12 @@
             <article>
               <span>20:30</span>
               <h3>Участники отмечаются</h3>
-              <p>Клан видит, кто идет, кто опоздает, кто не сможет. Это помогает быстрее собрать состав.</p>
+              <p>Гильдия видит, кто идет, кто опоздает, кто не сможет. Это помогает быстрее собрать состав.</p>
             </article>
             <article>
               <span>После фарма</span>
               <h3>Записывается лут и DKP</h3>
-              <p>Офицер выбирает участника, указывает предмет и стоимость. Баланс DKP обновляется в базе.</p>
+              <p>Офицер выбирает участника, указывает предмет и стоимость. Баланс DKP/очков обновляется в базе.</p>
             </article>
             <article>
               <span>На следующий день</span>
@@ -178,9 +207,9 @@
           </div>
           <div class="screenshot-feature">
             <figure>
-              <img src="./assets/screenshots/clan-panel.png" alt="Панель управления L2 Clan OS в Discord с кнопками для рейдов, DKP, лута и прав" loading="lazy">
+              <img src="./assets/screenshots/clan-panel.png" alt="Панель управления MMO Clan OS в Discord с кнопками для рейдов, DKP, лута и прав" loading="lazy">
               <figcaption>
-                <strong>Главная панель клана</strong>
+                <strong>Главная панель гильдии</strong>
                 <span>Все важные действия доступны кнопками, без набора длинных команд.</span>
               </figcaption>
             </figure>
@@ -188,7 +217,7 @@
           <div class="screenshot-grid" aria-label="Галерея интерфейса">
             <figure>
               <button class="screenshot-button" type="button" data-full="./assets/screenshots/register-modal.png" data-caption="Регистрация участника" aria-label="Увеличить скриншот: Регистрация участника">
-                <img src="./assets/screenshots/register-modal.png" alt="Форма регистрации участника в L2 Clan OS" loading="lazy">
+                <img src="./assets/screenshots/register-modal.png" alt="Форма регистрации участника в MMO Clan OS" loading="lazy">
                 <span>Увеличить</span>
               </button>
               <figcaption>Регистрация участника</figcaption>
@@ -202,17 +231,17 @@
             </figure>
             <figure>
               <button class="screenshot-button" type="button" data-full="./assets/screenshots/raid-list.png" data-caption="Список рейдов" aria-label="Увеличить скриншот: Список рейдов">
-                <img src="./assets/screenshots/raid-list.png" alt="Список рейдов в L2 Clan OS" loading="lazy">
+                <img src="./assets/screenshots/raid-list.png" alt="Список рейдов в MMO Clan OS" loading="lazy">
                 <span>Увеличить</span>
               </button>
               <figcaption>Список рейдов</figcaption>
             </figure>
             <figure>
-              <button class="screenshot-button" type="button" data-full="./assets/screenshots/timer-modal.png" data-caption="Таймеры РБ" aria-label="Увеличить скриншот: Таймеры РБ">
-                <img src="./assets/screenshots/timer-modal.png" alt="Форма добавления таймера РБ или эпика" loading="lazy">
+              <button class="screenshot-button" type="button" data-full="./assets/screenshots/timer-modal.png" data-caption="Таймеры боссов" aria-label="Увеличить скриншот: Таймеры боссов">
+                <img src="./assets/screenshots/timer-modal.png" alt="Форма добавления таймера босса или события" loading="lazy">
                 <span>Увеличить</span>
               </button>
-              <figcaption>Таймеры РБ</figcaption>
+              <figcaption>Таймеры боссов</figcaption>
             </figure>
             <figure>
               <button class="screenshot-button" type="button" data-full="./assets/screenshots/dkp-user-select.png" data-caption="Выбор участника" aria-label="Увеличить скриншот: Выбор участника">
@@ -230,17 +259,17 @@
             </figure>
             <figure>
               <button class="screenshot-button" type="button" data-full="./assets/screenshots/loot-modal.png" data-caption="Запись лута" aria-label="Увеличить скриншот: Запись лута">
-                <img src="./assets/screenshots/loot-modal.png" alt="Форма записи лута и стоимости DKP" loading="lazy">
+                <img src="./assets/screenshots/loot-modal.png" alt="Форма записи лута и стоимости DKP или очков" loading="lazy">
                 <span>Увеличить</span>
               </button>
               <figcaption>Запись лута</figcaption>
             </figure>
             <figure>
-              <button class="screenshot-button" type="button" data-full="./assets/screenshots/access-role-select.png" data-caption="Права клана" aria-label="Увеличить скриншот: Права клана">
-                <img src="./assets/screenshots/access-role-select.png" alt="Выбор роли участника клана" loading="lazy">
+              <button class="screenshot-button" type="button" data-full="./assets/screenshots/access-role-select.png" data-caption="Права гильдии" aria-label="Увеличить скриншот: Права гильдии">
+                <img src="./assets/screenshots/access-role-select.png" alt="Выбор роли участника гильдии" loading="lazy">
                 <span>Увеличить</span>
               </button>
-              <figcaption>Права клана</figcaption>
+              <figcaption>Права гильдии</figcaption>
             </figure>
           </div>
         </div>
@@ -250,7 +279,7 @@
         <div class="section-inner steps-layout">
           <div class="section-heading sticky-heading">
             <p class="eyebrow">Подключение</p>
-            <h2 id="connect-title">Как клан начинает пользоваться ботом</h2>
+            <h2 id="connect-title">Как гильдия начинает пользоваться ботом</h2>
             <p>Сервер не получает доступ автоматически. Сначала он попадает в заявку, а владелец бота одобряет его в панели владельца.</p>
           </div>
           <ol class="steps">
@@ -282,7 +311,7 @@
             <li>
               <span>3</span>
               <div>
-                <h3>Настроить клан</h3>
+                <h3>Настроить гильдию</h3>
                 <p>Админ сервера выполняет <code>/setup</code>, затем открывает <code>/panel</code> и назначает права.</p>
               </div>
             </li>
@@ -290,7 +319,7 @@
               <span>4</span>
               <div>
                 <h3>Работать через кнопки</h3>
-                <p>Регистрация, рейды, DKP, лут и таймеры идут через интерфейс Discord, а не через ручные таблицы.</p>
+                <p>Регистрация, рейды, DKP/очки, лут, таймеры и анонсы идут через интерфейс Discord, а не через ручные таблицы.</p>
               </div>
             </li>
           </ol>
@@ -301,21 +330,21 @@
         <div class="section-inner roles-layout">
           <div>
             <p class="eyebrow">Роли</p>
-            <h2 id="roles-title">Права можно раздать внутри клана</h2>
-            <p>Не каждый участник должен управлять DKP или закрывать рейды. Поэтому в боте есть простая модель доступа.</p>
+            <h2 id="roles-title">Права можно раздать внутри гильдии</h2>
+            <p>Не каждый участник должен управлять DKP/очками или закрывать рейды. Поэтому в боте есть простая модель доступа.</p>
           </div>
-          <div class="role-list" aria-label="Роли в клане">
+          <div class="role-list" aria-label="Роли в гильдии">
             <article>
               <h3>Админ</h3>
-              <p>Назначает права, управляет клановой панелью и может давать доступ офицерам.</p>
+              <p>Назначает права, управляет панелью гильдии и может давать доступ офицерам.</p>
             </article>
             <article>
               <h3>Офицер</h3>
-              <p>Ведет рейды, таймеры, DKP и лут. Это рабочая роль для тех, кто помогает управлять праймами.</p>
+              <p>Ведет рейды, таймеры, анонсы, DKP/очки и лут. Это рабочая роль для тех, кто помогает управлять праймами.</p>
             </article>
             <article>
               <h3>Участник</h3>
-              <p>Смотрит списки, баланс DKP, рейды и отмечается на событиях.</p>
+              <p>Смотрит списки, баланс DKP/очков, рейды и отмечается на событиях.</p>
             </article>
           </div>
         </div>
@@ -329,13 +358,13 @@
           </div>
           <div class="security-copy">
             <p>
-              Даже если invite-ссылка попадет наружу, новый Discord-сервер сначала получает статус ожидания. Команды клана не работают, пока владелец бота не одобрит заявку.
+              Даже если invite-ссылка попадет наружу, новый Discord-сервер сначала получает статус ожидания. Команды гильдии не работают, пока владелец бота не одобрит заявку.
             </p>
             <p>
-              Доступ можно выдать на trial или до конкретной даты. Когда срок пройдет, клановые команды автоматически блокируются до продления.
+              Доступ можно выдать на trial или до конкретной даты. Когда срок пройдет, рабочие функции автоматически блокируются до продления.
             </p>
             <p>
-              Это удобно, если бот используется как сервис для нескольких кланов: каждый сервер изолирован, а владелец бота контролирует заявки и сроки через отдельную панель.
+              Это удобно, если бот используется как сервис для нескольких MMORPG-сообществ: каждый сервер изолирован, а владелец бота контролирует заявки и сроки через отдельную панель.
             </p>
           </div>
         </div>
@@ -349,20 +378,20 @@
           </div>
           <div class="faq-grid">
             <details>
-              <summary>Можно ли пользоваться нескольким кланам?</summary>
-              <p>Да. Один Discord-сервер считается одним кланом, данные каждого сервера разделены по своему ID.</p>
+              <summary>Можно ли пользоваться нескольким гильдиям?</summary>
+              <p>Да. Один Discord-сервер считается одной гильдией или кланом, данные каждого сервера разделены по своему ID.</p>
             </details>
             <details>
               <summary>Нужно ли участникам знать команды?</summary>
-              <p>Почти нет. Главные действия вынесены в кнопки и формы: регистрация, рейды, DKP, лут, таймеры и права.</p>
+              <p>Почти нет. Главные действия вынесены в кнопки и формы: регистрация, рейды, DKP/очки, лут, таймеры, анонсы и права.</p>
             </details>
             <details>
               <summary>Кто назначает права?</summary>
-              <p>Админ клана назначает роли через панель: админ, офицер или участник. Владелец Discord-сервера всегда считается админом.</p>
+              <p>Админ гильдии назначает роли через панель: админ, офицер или участник. Владелец Discord-сервера всегда считается админом.</p>
             </details>
             <details>
               <summary>Что будет после окончания доступа?</summary>
-              <p>Клановые команды перестанут работать, пока владелец бота не продлит срок доступа.</p>
+              <p>Команды гильдии перестанут работать, пока владелец бота не продлит срок доступа.</p>
             </details>
           </div>
         </div>
@@ -371,7 +400,7 @@
       <section class="cta" aria-labelledby="cta-title">
         <div class="cta-inner">
           <p class="eyebrow">Готово для теста</p>
-          <h2 id="cta-title">Хочешь подключить свой клан?</h2>
+          <h2 id="cta-title">Хочешь подключить свою гильдию?</h2>
           <p>Попроси ссылку на добавление бота, добавь его на Discord-сервер и дождись одобрения заявки.</p>
           <a class="button primary" href="#connect">Посмотреть шаги подключения</a>
         </div>
@@ -388,8 +417,8 @@
     </div>
 
     <footer class="site-footer">
-      <span>L2 Clan OS</span>
-      <a href="https://github.com/den063rus-design/L2_Clan_OS">GitHub</a>
+      <span>MMO Clan OS</span>
+      <a href="https://github.com/den063rus-design/MMO_Clan_OS_public">GitHub</a>
     </footer>
   </body>
 </html>
