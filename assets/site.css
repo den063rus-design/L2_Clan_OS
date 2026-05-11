@@ -252,6 +252,26 @@ p {
   margin-top: 2rem;
 }
 
+.hero-note {
+  max-width: 680px;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.hero-note a {
+  color: var(--gold);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.hero-note a:hover,
+.hero-note a:focus-visible {
+  color: var(--mint);
+}
+
 .button {
   display: inline-flex;
   min-height: 2.85rem;
