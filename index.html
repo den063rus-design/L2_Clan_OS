@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="MMO Clan OS - Discord-бот для MMORPG-кланов и гильдий: рейды, DKP/очки, лут, таймеры, анонсы и права через кнопки.">
-    <title>MMO Clan OS - Discord-бот для MMORPG-кланов и гильдий</title>
+    <meta name="description" content="MMO Guild Platform - кроссплатформенная платформа для MMO-сообществ: Discord, Telegram, VK. Рейды, attendance, DKP/очки, лут, роли и доступ через общий core.">
+    <title>MMO Guild Platform - кроссплатформенная платформа для MMO-гильдий и кланов</title>
     <link rel="icon" href="./assets/icon.png" type="image/png">
     <link rel="stylesheet" href="./assets/site.css">
     <script src="./assets/site.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="MMO Clan OS">
+      <a class="brand" href="#top" aria-label="MMO Guild Platform">
         <img class="brand-logo" src="./assets/icon.png" alt="" aria-hidden="true">
-        <span>MMO Clan OS</span>
+        <span>MMO Guild Platform</span>
       </a>
       <nav class="site-nav" aria-label="Основная навигация">
         <a href="#features">Возможности</a>
@@ -31,35 +31,35 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <img class="hero-emblem" src="./assets/icon.png" alt="" aria-hidden="true">
-          <p class="eyebrow">Discord-инструмент для MMORPG</p>
-          <h1 id="hero-title">MMO Clan OS</h1>
+          <p class="eyebrow">Кроссплатформенный MMO runtime</p>
+          <h1 id="hero-title">MMO Guild Platform</h1>
           <p class="hero-copy">
-            Панель управления кланом или гильдией в Discord: рейды, отметки участия, DKP/очки, лут, таймеры, анонсы и права доступа без длинных команд, ручных таблиц и потерянных сообщений.
+            Платформа для кланов и гильдий в Discord, Telegram и VK: рейды, отметки участия, DKP/очки, лут, роли и контроль доступа. Один игровой профиль игрока может быть связан с несколькими платформами, а бизнес-логика живет в общем core.
           </p>
           <div class="hero-actions" aria-label="Основные действия">
             <a class="button primary" href="#connect">Подключить на бесплатный тест</a>
-            <a class="button secondary" href="https://discord.gg/wZZ3CzPwrw" target="_blank" rel="noopener">Зайти в демо Discord</a>
+            <a class="button secondary" href="https://discord.gg/wZZ3CzPwrw" target="_blank" rel="noopener">Открыть демо Discord</a>
             <a class="button secondary" href="#screens">Посмотреть скриншоты</a>
             <a class="button secondary" href="./manual.html">Открыть мануал</a>
           </div>
           <p class="hero-note">
-            Хотите попробовать на своем сервере? Нажмите <a href="#connect">«Подключить на бесплатный тест»</a> или напишите владельцу:
+            Хотите попробовать на своем сообществе? Нажмите <a href="#connect">«Подключить на бесплатный тест»</a> или напишите владельцу:
             <a href="https://discord.com/users/1502280429078712351" target="_blank" rel="noopener">Discord</a>,
             <a href="https://t.me/dv_rus1" target="_blank" rel="noopener">Telegram</a>,
             <a href="mailto:denis_vv@list.ru">почта</a>.
           </p>
           <dl class="hero-stats" aria-label="Ключевые возможности">
             <div>
-              <dt>Кнопки</dt>
-              <dd>вместо команд</dd>
+              <dt>Платформы</dt>
+              <dd>Discord, Telegram, VK</dd>
             </div>
             <div>
-              <dt>Очки</dt>
-              <dd>DKP, баланс и списания</dd>
+              <dt>Core</dt>
+              <dd>единая бизнес-логика</dd>
             </div>
             <div>
-              <dt>MMO</dt>
-              <dd>гильдии и кланы отдельно</dd>
+              <dt>Профиль</dt>
+              <dd>один ник на все платформы</dd>
             </div>
           </dl>
         </div>
@@ -69,14 +69,14 @@
         <div class="section-inner intro-grid">
           <div>
             <p class="eyebrow">Зачем это нужно</p>
-            <h2 id="intro-title">Операционка MMO-гильдии прямо внутри Discord</h2>
+            <h2 id="intro-title">Операционка MMO-сообщества сразу в нескольких платформах</h2>
           </div>
           <div class="intro-copy">
             <p>
-              В MMORPG гильдия живет в Discord: там собираются на рейды, спорят за лут, отмечают праймы, ищут замену в статик или группу и держат расписание боссов. Проблема в том, что без системы все быстро превращается в поток сообщений, скриншотов и ручных таблиц.
+              В MMORPG сообщество живет в чатах: кто-то в Discord, кто-то в Telegram, кто-то в VK. Без общей системы рейды и учет быстро превращаются в поток сообщений, скриншотов и ручных таблиц.
             </p>
             <p>
-              MMO Clan OS переносит основные процессы клана или гильдии в понятные кнопки. Офицер не вспоминает команды, участник не ищет, куда писать ник, а админ видит, кто имеет права и до какой даты сервер может пользоваться ботом.
+              MMO Guild Platform переносит процессы в общий core и дает платформам только роль адаптеров: принять событие, собрать payload, вызвать action и отдать ответ обратно в чат.
             </p>
           </div>
         </div>
@@ -110,9 +110,9 @@
           <div class="section-heading">
             <p class="eyebrow">Шире одной игры</p>
             <h2 id="game-title">Подходит для любой MMORPG, где люди ходят на события группой</h2>
-            <p>Не важно, как игра называет сообщество: клан, гильдия, статик, конста или рейдовая группа. Если есть состав, расписание, боссы, лут и ответственные офицеры, MMO Clan OS закрывает эту рутину внутри Discord.</p>
+            <p>Не важно, как игра называет сообщество: клан, гильдия, корпа, статик, конста или рейдовая группа. Если есть состав, расписание, боссы, лут и ответственные офицеры, MMO Guild Platform закрывает эту рутину внутри привычных чатов.</p>
           </div>
-          <div class="game-list" aria-label="Для каких игр подходит MMO Clan OS">
+          <div class="game-list" aria-label="Для каких игр подходит MMO Guild Platform">
             <h3>Для каких игр</h3>
             <p>Бот можно использовать в MMORPG, где есть кланы, гильдии, рейды, осады, боссы, лут и внутренняя система очков.</p>
             <ul>
@@ -151,7 +151,7 @@
           <div class="section-heading">
             <p class="eyebrow">Возможности</p>
             <h2 id="features-title">Все базовые действия MMO-сообщества в одном месте</h2>
-            <p>MMO Clan OS не пытается заменить Discord. Он добавляет в него рабочий слой для гильдии: кнопки, формы, роли, история действий и контроль доступа.</p>
+            <p>MMO Guild Platform не привязан к одной платформе. Он дает единый рабочий слой для сообщества: кнопки, формы, роли, историю действий и контроль доступа поверх Discord, Telegram и VK.</p>
           </div>
           <div class="feature-grid">
             <article class="feature-card">
@@ -162,7 +162,7 @@
             <article class="feature-card">
               <span class="feature-index">02</span>
               <h3>Рейды и отметки</h3>
-              <p>Офицер создает рейд через форму, участники отмечаются кнопками, список рейдов остается в Discord.</p>
+              <p>Офицер создает рейд через форму, участники отмечаются кнопками, а анонс и статусы публикуются во всех подключенных чатах платформы.</p>
             </article>
             <article class="feature-card">
               <span class="feature-index">03</span>
@@ -172,17 +172,17 @@
             <article class="feature-card">
               <span class="feature-index">04</span>
               <h3>Права в гильдии</h3>
-              <p>Есть роли админа, офицера и участника. Админ сам назначает доступ своим людям.</p>
+              <p>Есть роли LEADER, OFFICER, PARTY_LEADER и MEMBER. Лидер сам назначает доступ своим людям.</p>
             </article>
             <article class="feature-card">
               <span class="feature-index">05</span>
-              <h3>Несколько серверов</h3>
-              <p>Один бот работает на разных Discord-серверах, а данные каждой гильдии или клана хранятся отдельно.</p>
+              <h3>Несколько чатов и платформ</h3>
+              <p>Один core работает с несколькими чатами и платформами, а данные каждой гильдии или клана хранятся отдельно.</p>
             </article>
             <article class="feature-card">
               <span class="feature-index">06</span>
-              <h3>Защита от чужих серверов</h3>
-              <p>Новый сервер попадает в ожидание. Владелец бота одобряет или запрещает заявки через свою панель.</p>
+              <h3>Контроль доступа</h3>
+              <p>Новая площадка попадает в ожидание. Владелец сервиса одобряет или запрещает заявки через свою панель.</p>
             </article>
           </div>
         </div>
@@ -199,7 +199,7 @@
             <article>
               <span>18:00</span>
               <h3>Офицер создает рейд</h3>
-              <p>Через кнопку <code>Создать рейд</code> вводит название и время. Рейд появляется в Discord, участники видят его в списке.</p>
+              <p>Через кнопку <code>Создать рейд</code> вводит название и время. Рейд публикуется в подключенных чатах, участники видят его в своей платформе.</p>
             </article>
             <article>
               <span>20:30</span>
@@ -224,43 +224,43 @@
         <div class="section-inner">
           <div class="section-heading">
             <p class="eyebrow">Скриншоты</p>
-            <h2 id="screens-title">Так бот выглядит в реальном Discord</h2>
-            <p>Нажмите на маленький скриншот, чтобы открыть его крупнее и рассмотреть детали интерфейса.</p>
+            <h2 id="screens-title">Как выглядит интерфейс в живой работе</h2>
+            <p>Нажмите на маленький скриншот, чтобы открыть его крупнее. Текущая галерея содержит исторические скриншоты Discord MVP, доменная логика у всех платформ общая.</p>
           </div>
           <div class="screenshot-feature">
             <figure>
-              <img src="./assets/screenshots/clan-panel.png" alt="Панель управления MMO Clan OS в Discord с кнопками для рейдов, DKP, лута и прав" loading="lazy">
+              <img src="./assets/screenshots/clan-panel.png" alt="Панель управления MMO Guild Platform в Discord с кнопками для рейдов, DKP, лута и прав" loading="lazy">
               <figcaption>
                 <strong>Главная панель сообщества</strong>
-                <span>Компактная общая панель остается в админ-канале: быстрые действия и вход в личный кабинет.</span>
+                <span>Компактная общая панель остается в рабочем чате: быстрые действия и вход в личный кабинет.</span>
               </figcaption>
             </figure>
           </div>
           <div class="screenshot-grid" aria-label="Галерея интерфейса">
             <figure>
               <button class="screenshot-button" type="button" data-full="./assets/screenshots/personal-cabinet.png" data-caption="Мой кабинет" aria-label="Увеличить скриншот: Мой кабинет">
-                <img src="./assets/screenshots/personal-cabinet.png" alt="Личный кабинет MMO Clan OS с разделами рейдов, таймеров, очков, лута и прав" loading="lazy">
+                <img src="./assets/screenshots/personal-cabinet.png" alt="Личный кабинет MMO Guild Platform с разделами рейдов, таймеров, очков, лута и прав" loading="lazy">
                 <span>Увеличить</span>
               </button>
               <figcaption>Мой кабинет</figcaption>
             </figure>
             <figure>
               <button class="screenshot-button" type="button" data-full="./assets/screenshots/register-modal.png" data-caption="Регистрация участника" aria-label="Увеличить скриншот: Регистрация участника">
-                <img src="./assets/screenshots/register-modal.png" alt="Форма регистрации участника в MMO Clan OS" loading="lazy">
+                <img src="./assets/screenshots/register-modal.png" alt="Форма регистрации участника в MMO Guild Platform" loading="lazy">
                 <span>Увеличить</span>
               </button>
               <figcaption>Регистрация участника</figcaption>
             </figure>
             <figure>
               <button class="screenshot-button" type="button" data-full="./assets/screenshots/raid-create-modal.png" data-caption="Создание рейда" aria-label="Увеличить скриншот: Создание рейда">
-                <img src="./assets/screenshots/raid-create-modal.png" alt="Форма создания рейда в Discord" loading="lazy">
+                 <img src="./assets/screenshots/raid-create-modal.png" alt="Форма создания рейда" loading="lazy">
                 <span>Увеличить</span>
               </button>
               <figcaption>Создание рейда</figcaption>
             </figure>
             <figure>
               <button class="screenshot-button" type="button" data-full="./assets/screenshots/raid-list.png" data-caption="Список рейдов" aria-label="Увеличить скриншот: Список рейдов">
-                <img src="./assets/screenshots/raid-list.png" alt="Список рейдов в MMO Clan OS" loading="lazy">
+                <img src="./assets/screenshots/raid-list.png" alt="Список рейдов в MMO Guild Platform" loading="lazy">
                 <span>Увеличить</span>
               </button>
               <figcaption>Список рейдов</figcaption>
@@ -308,27 +308,27 @@
         <div class="section-inner steps-layout">
           <div class="section-heading sticky-heading">
             <p class="eyebrow">Бесплатный тест</p>
-            <h2 id="connect-title">Как подключить гильдию на тест</h2>
-            <p>Сначала добавьте бота по invite-ссылке, потом напишите владельцу в Discord, Telegram или на почту. Сервер попадет в заявку, а владелец подтвердит тестовый доступ.</p>
+            <h2 id="connect-title">Как подключить сообщество на тест</h2>
+            <p>Быстрее всего стартовать с Discord, затем можно подключать Telegram и VK. Напишите владельцу, чтобы получить тестовый доступ и настройку под ваш формат сообщества.</p>
           </div>
           <ol class="steps">
             <li>
               <span>1</span>
               <div>
-                <h3>Нажать invite-ссылку и добавить бота</h3>
+                <h3>Добавить бота в первый рабочий чат</h3>
                 <p>
                   Откройте
                   <a class="contact-link" href="https://discord.com/oauth2/authorize?client_id=1502288316320579624&permissions=2147576832&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener">invite-ссылку</a>,
-                  выберите свой Discord-сервер и добавьте бота. После этого сервер появится в списке заявок.
+                  выберите свой Discord-сервер и добавьте бота. После этого площадка появится в списке заявок.
                 </p>
               </div>
             </li>
             <li>
               <span>2</span>
               <div>
-                <h3>Написать владельцу для бесплатного теста</h3>
+                <h3>Написать владельцу для активации теста</h3>
                 <p>
-                  Напишите, что хотите подключить сервер на тест, и укажите название Discord-сервера. Связаться можно через
+                  Напишите, что хотите подключить сообщество на тест, и укажите площадку и название чата. Связаться можно через
                   <a class="contact-link" href="https://discord.com/users/1502280429078712351" target="_blank" rel="noopener">Discord</a>,
                   <a class="contact-link" href="https://t.me/dv_rus1" target="_blank" rel="noopener">Telegram</a>
                   или на
@@ -340,15 +340,15 @@
             <li>
               <span>3</span>
               <div>
-                <h3>Настроить гильдию</h3>
-                <p>Админ сервера выполняет <code>/setup</code>, затем открывает <code>/panel</code> и назначает права.</p>
+                <h3>Настроить сообщество и роли</h3>
+                <p>Лидер или офицер выполняет <code>/setup</code>, затем открывает <code>/panel</code> и назначает права в клане.</p>
               </div>
             </li>
             <li>
               <span>4</span>
               <div>
-                <h3>Работать через кнопки</h3>
-                <p>Регистрация, рейды, DKP/очки, лут, таймеры и анонсы идут через интерфейс Discord, а не через ручные таблицы.</p>
+                <h3>Работать через общий runtime</h3>
+                <p>Регистрация, рейды, DKP/очки, лут, таймеры и анонсы идут через единые core-действия независимо от платформы.</p>
               </div>
             </li>
           </ol>
@@ -364,7 +364,7 @@
           </div>
           <div class="role-list" aria-label="Роли в гильдии">
             <article>
-              <h3>Админ</h3>
+              <h3>Лидер</h3>
               <p>Назначает права, управляет панелью гильдии и может давать доступ офицерам.</p>
             </article>
             <article>
@@ -383,17 +383,17 @@
         <div class="section-inner security-grid">
           <div>
             <p class="eyebrow">Контроль доступа</p>
-            <h2 id="security-title">Левый сервер не сможет просто взять и пользоваться</h2>
+            <h2 id="security-title">Случайная площадка не получит доступ автоматически</h2>
           </div>
           <div class="security-copy">
             <p>
-              Даже если invite-ссылка попадет наружу, новый Discord-сервер сначала получает статус ожидания. Команды гильдии не работают, пока владелец бота не одобрит заявку.
+              Даже если invite-ссылка попадет наружу, новая площадка сначала получает статус ожидания. Команды гильдии не работают, пока владелец сервиса не одобрит заявку.
             </p>
             <p>
               Доступ можно выдать на trial или до конкретной даты. Когда срок пройдет, рабочие функции автоматически блокируются до продления.
             </p>
             <p>
-              Это удобно, если бот используется как сервис для нескольких MMORPG-сообществ: каждый сервер изолирован, а владелец бота контролирует заявки и сроки через отдельную панель.
+              Это удобно, если платформа используется как сервис для нескольких MMORPG-сообществ: каждый клан изолирован, а владелец сервиса контролирует заявки и сроки через отдельную панель.
             </p>
           </div>
         </div>
@@ -408,7 +408,7 @@
           <div class="faq-grid">
             <details>
               <summary>Можно ли пользоваться нескольким гильдиям?</summary>
-              <p>Да. Один Discord-сервер считается одной гильдией или кланом, данные каждого сервера разделены по своему ID.</p>
+              <p>Да. Каждое сообщество изолировано по своему `clanId`, чаты и платформы подключаются как отдельные адаптеры.</p>
             </details>
             <details>
               <summary>Нужно ли участникам знать команды?</summary>
@@ -416,11 +416,11 @@
             </details>
             <details>
               <summary>Кто назначает права?</summary>
-              <p>Админ гильдии назначает роли через панель: админ, офицер или участник. Владелец Discord-сервера всегда считается админом.</p>
+              <p>Лидер или офицер назначает роли через панель: лидер, офицер, пати-лидер, участник.</p>
             </details>
             <details>
               <summary>Что будет после окончания доступа?</summary>
-              <p>Команды гильдии перестанут работать, пока владелец бота не продлит срок доступа.</p>
+              <p>Команды гильдии перестанут работать, пока владелец сервиса не продлит срок доступа.</p>
             </details>
           </div>
         </div>
@@ -429,8 +429,8 @@
       <section class="cta" aria-labelledby="cta-title">
         <div class="cta-inner">
           <p class="eyebrow">Бесплатный тест</p>
-          <h2 id="cta-title">Подключим бота на тест, без покупки с нуля</h2>
-          <p>Зайдите в демо Discord, посмотрите интерфейс, а если хотите попробовать на своем сервере - напишите владельцу и передайте название Discord-сервера.</p>
+          <h2 id="cta-title">Подключим платформу на тест и соберем ваш MVP-поток</h2>
+          <p>Зайдите в демо Discord, посмотрите логику, а затем подключим ваш клан с учетом нужной терминологии: клан, гильдия, корпа, статик или конста.</p>
           <div class="cta-actions">
             <a class="button primary" href="https://t.me/dv_rus1" target="_blank" rel="noopener">Написать в Telegram</a>
             <a class="button secondary" href="https://discord.com/users/1502280429078712351" target="_blank" rel="noopener">Написать в Discord</a>
@@ -451,7 +451,7 @@
     </div>
 
     <footer class="site-footer">
-      <span>MMO Clan OS</span>
+      <span>MMO Guild Platform</span>
       <a href="https://github.com/den063rus-design/MMO_Clan_OS_public">GitHub</a>
     </footer>
   </body>
