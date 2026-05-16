@@ -1,6 +1,6 @@
-# MMO Guild Platform Public
+# MMO Clan OS Public
 
-Публичная витрина проекта **MMO Guild Platform** (ранее MMO Clan OS).
+Публичная витрина проекта **MMO Clan OS**.
 
 Сайт обновлён под текущую архитектуру:
 
